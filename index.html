@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-btn': '#B68C5A',
+                'primary-text': '#414040',
+                'secondary-text': '#707070',
               }
             }
           }
@@ -33,11 +36,76 @@
         }
     </style>
 </head>
-<body>
-    <header>
+<body class="poppins">
+    <header class="container mx-auto px-8 md:px-16 lg:px-24">
+        <!-- Navbar -->
         <nav>
-            
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="text-base text-secondary menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>Services</a></li>
+                      <li><a>Cases</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <img src="./images/logo2.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li>
+                        <div class="flex">
+                            <a>Services</a>
+                            <img src="./images/Frame.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex">
+                            <a>Cases</a>
+                            <img src="./images/Frame.svg" alt=""> 
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="flex">
+                            <a>Blog</a>
+                            <img src="./images/Frame.svg" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex">
+                            <a>Contact Us</a>
+                            <img src="./images/Frame.svg" alt="">
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-primary-btn text-white">Free Consultation</a>
+                </div>
+              </div>
         </nav>
+        <!-- Hero Banner Section -->
+        <section>
+            <div class="hero min-h-[calc(100vh-72px)]" style="background-image: url('./images/banner.png');">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class=" text-center text-neutral-content">
+                  <div class="py-10 px-5 max-w-xl">
+                    <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <div class="flex flex-col gap-5 px-8 md:flex-row lg:flex-row ">
+                        <input type="text" placeholder="Type here" class="input input-ghost bg-white w-full max-w-xl" />
+                        <button class="btn bg-primary-btn text-white border-0">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
 
     <main>
